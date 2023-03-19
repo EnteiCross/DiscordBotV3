@@ -1,8 +1,11 @@
 import * as Discord from 'discord.js';
+import dotenv from 'dotenv';
 
-const { token } = require('../env.json');
+dotenv.config();
 
-console.log(token);
+console.log(process.env.A);
+console.log(process.env.B);
+console.log(process.env.DISCORD_TOKEN);
 
 /*
 const client = new Discord.Client();
@@ -17,6 +20,6 @@ client.on('message', (message: Discord.Message) => {
   }
 });
 
-client.login('OTEyNzk3MDM4NjA4MDExMjc0.GY1ZBR.wU7ItsOPUQPbAr4zWCFz8PzleKpN4DPwAN-A04');
+client.login('');
 
 */
